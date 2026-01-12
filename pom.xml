@@ -3,7 +3,7 @@
 
 	<groupId>net.shapechange</groupId>
 	<artifactId>ShapeChangeAntlr</artifactId>
-	<version>0.1.1</version>
+	<version>0.1.2-SNAPSHOT</version>
 
 	<!-- Project Information -->
 	<name>ShapeChange Antlr</name>
@@ -42,7 +42,7 @@
 		<connection>scm:git:https://github.com/ShapeChange/ShapeChangeAntlr.git</connection>
 		<developerConnection>
 			scm:git:https://github.com/ShapeChange/ShapeChangeAntlr.git</developerConnection>
-		<tag>ShapeChangeAntlr-0.1.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<repositories>
