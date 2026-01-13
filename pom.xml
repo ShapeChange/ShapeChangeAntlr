@@ -45,16 +45,18 @@
 		<tag>HEAD</tag>
 	</scm>
 
-	<repositories>
+	<distributionManagement>
 		<repository>
 			<id>central</id>
 			<name>Central Repository</name>
 			<url>https://repo1.maven.org/maven2</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
 		</repository>
-	</repositories>
+		<snapshotRepository>
+			<id>central</id>
+			<name>Central Portal Snapshots</name>
+			<url>https://central.sonatype.com/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -155,6 +157,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<publishingServerId>central</publishingServerId>
+					<deploymentName>${project.artifactId} ${project.version}</deploymentName>
 				</configuration>
 			</plugin>
 			<plugin>
